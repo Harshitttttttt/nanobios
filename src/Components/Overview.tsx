@@ -107,6 +107,51 @@ const barData = [
   },
 ];
 
+const carData = [
+  {
+    name: "Page A",
+    uv: 1200,
+    pv: 3400,
+    amt: 1800,
+  },
+  {
+    name: "Page B",
+    uv: 500,
+    pv: 2398,
+    amt: 1210,
+  },
+  {
+    name: "Page C",
+    uv: 3200,
+    pv: 4800,
+    amt: 3290,
+  },
+  {
+    name: "Page D",
+    uv: 1780,
+    pv: 2908,
+    amt: 1000,
+  },
+  {
+    name: "Page E",
+    uv: 890,
+    pv: 2800,
+    amt: 1181,
+  },
+  {
+    name: "Page F",
+    uv: 1390,
+    pv: 1800,
+    amt: 1500,
+  },
+  {
+    name: "Page G",
+    uv: 2490,
+    pv: 3300,
+    amt: 1100,
+  },
+];
+
 export default function Overview() {
   return (
     <div className="flex flex-col w-[70vw]">
@@ -148,7 +193,7 @@ export default function Overview() {
         <div className="parking bg-grey rounded-xl p-4 flex flex-col gap-20">
           <span>Car Park Vacancy For Private Car</span>
           <ResponsiveContainer width={"100%"} height={300}>
-            <BarChart width={150} height={40} data={barData}>
+            <BarChart width={150} height={40} data={carData}>
               <Bar dataKey="uv" fill="#8884d8" />
             </BarChart>
           </ResponsiveContainer>
