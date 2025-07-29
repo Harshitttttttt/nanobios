@@ -121,7 +121,7 @@ export default function Overview() {
               <Line
                 type="monotone"
                 dataKey="pv"
-                stroke="#8884d8"
+                stroke="#ED33B9"
                 strokeWidth={2}
               />
             </LineChart>
@@ -139,25 +139,25 @@ export default function Overview() {
                 cx="50%"
                 cy="50%"
                 outerRadius={80}
-                fill="#8884d8"
+                fill="#5AFF15"
                 label
               />
             </PieChart>
           </ResponsiveContainer>
         </div>
-        <div className="parking col-span-3 bg-grey rounded-xl p-4 flex flex-col">
+        <div className="parking bg-grey rounded-xl p-4 flex flex-col gap-20">
           <span>Car Park Vacancy For Private Car</span>
-          <ResponsiveContainer width="100%" height={300}>
+          <ResponsiveContainer width={"100%"} height={300}>
             <BarChart width={150} height={40} data={barData}>
               <Bar dataKey="uv" fill="#8884d8" />
             </BarChart>
           </ResponsiveContainer>
         </div>
-        <div className="wind row-span-2 bg-grey rounded-xl p-4 flex flex-col">
+        <div className="wind bg-grey rounded-xl p-4 flex flex-col gap-20">
           <span>Wind Status</span>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart width={150} height={40} data={barData}>
-              <Bar dataKey="uv" fill="#8884d8" />
+              <Bar dataKey="uv" fill="#F72C25" />
             </BarChart>
           </ResponsiveContainer>
         </div>
