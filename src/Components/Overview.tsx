@@ -6,11 +6,6 @@ import {
   PieChart,
   BarChart,
   Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
 } from "recharts";
 
 const o2data = [
