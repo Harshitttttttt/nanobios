@@ -111,8 +111,8 @@ export default function Overview() {
   return (
     <div className="flex flex-col w-[70vw]">
       <div>Today's Overview</div>
-      <div className="grid grid-rows-4 grid-cols-5 gap-5">
-        <div className="o2 col-span-3 bg-grey rounded-xl p-4 flex flex-col">
+      <div className="grid grid-rows-2 grid-cols-2 gap-5">
+        <div className="o2 bg-grey rounded-xl p-4 flex flex-col">
           <span>
             O<sub>2</sub> Concentration
           </span>
@@ -127,7 +127,7 @@ export default function Overview() {
             </LineChart>
           </ResponsiveContainer>
         </div>
-        <div className="uv col-span-2 bg-grey rounded-xl p-4 flex flex-col">
+        <div className="uv bg-grey rounded-xl p-4 flex flex-col">
           <span>UV Index</span>
           <ResponsiveContainer width="100%" height={400}>
             <PieChart width={400} height={400}>
@@ -145,7 +145,7 @@ export default function Overview() {
             </PieChart>
           </ResponsiveContainer>
         </div>
-        <div className="parking row-span-3 col-span-3 bg-grey rounded-xl p-4 flex flex-col">
+        <div className="parking col-span-3 bg-grey rounded-xl p-4 flex flex-col">
           <span>Car Park Vacancy For Private Car</span>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart width={150} height={40} data={barData}>
@@ -153,7 +153,7 @@ export default function Overview() {
             </BarChart>
           </ResponsiveContainer>
         </div>
-        <div className="wind col-span-2 row-span-2 bg-grey rounded-xl p-4 flex flex-col">
+        <div className="wind row-span-2 bg-grey rounded-xl p-4 flex flex-col">
           <span>Wind Status</span>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart width={150} height={40} data={barData}>
