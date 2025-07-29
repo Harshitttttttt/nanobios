@@ -29,18 +29,23 @@ export default function OtherCities() {
       <div>
         <div>
           {data.map(({ country, city, weather, icon }) => (
-            <div
-              key={city}
-              className="flex flex-row items-center justify-between py-5"
-            >
-              <div className="flex flex-col gap-2">
-                <div className="text-black bg-amber-500 w-auto rounded-full px-5">
-                  {country}
+            <div key={city} className="flex flex-col py-5">
+              <div className="flex flex-row items-center justify-between">
+                <div className="flex flex-col gap-2">
+                  <div className="text-black bg-amber-500 w-auto rounded-full px-5">
+                    {country}
+                  </div>
+                  <div className="text-2xl">{city}</div>
+                  <div className="">{weather}</div>
                 </div>
-                <div className="text-2xl">{city}</div>
-                <div className="">{weather}</div>
+                <div className="text-4xl">{icon}</div>
               </div>
-              <div className="text-4xl">{icon}</div>
+              <input
+                type="range"
+                name="slider"
+                className=""
+                value={Math.random() * 100}
+              />
             </div>
           ))}
         </div>
