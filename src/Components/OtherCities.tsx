@@ -33,7 +33,7 @@ export default function OtherCities() {
               key={city}
               className="flex flex-row items-center justify-between py-5"
             >
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-2">
                 <div className="text-amber-300 bg-amber-500 w-auto rounded-full px-5">
                   {country}
                 </div>
