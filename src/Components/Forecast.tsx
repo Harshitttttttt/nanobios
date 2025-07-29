@@ -132,7 +132,7 @@ export default function Forecast() {
           {forecastData[activeTab].map(({ day, temp, icon }) => (
             <div
               key={day}
-              className="flex flex-col items-center justify-center w-30 h-45 bg-grey rounded-full gap-5"
+              className="flex flex-col items-center justify-center w-30 h-45 bg-grey rounded-full gap-5 ring"
             >
               <div className="border-b-1">{day}</div>
               <div className="px-10">{icon}</div>
