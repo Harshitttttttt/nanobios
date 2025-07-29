@@ -184,7 +184,7 @@ export default function Overview() {
                 cx="50%"
                 cy="50%"
                 outerRadius={80}
-                fill="#5AFF15"
+                fill="#EAE0CC"
                 label
               />
             </PieChart>
