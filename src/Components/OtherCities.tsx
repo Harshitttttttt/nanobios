@@ -34,7 +34,7 @@ export default function OtherCities() {
               className="flex flex-row items-center justify-between py-5"
             >
               <div className="flex flex-col gap-2">
-                <div className="text-amber-300 bg-amber-500 w-auto rounded-full px-5">
+                <div className="text-black bg-amber-500 w-auto rounded-full px-5">
                   {country}
                 </div>
                 <div className="text-2xl">{city}</div>
