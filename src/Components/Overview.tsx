@@ -158,7 +158,7 @@ export default function Overview() {
       <div>Today's Overview</div>
       <div className="grid grid-rows-2 grid-cols-2 gap-5">
         <div className="o2 bg-grey rounded-xl p-4 flex flex-col ring">
-          <span>
+          <span className="font-bold">
             O<sub>2</sub> Concentration
           </span>
           <ResponsiveContainer width="100%" height="100%">
@@ -173,7 +173,7 @@ export default function Overview() {
           </ResponsiveContainer>
         </div>
         <div className="uv bg-grey rounded-xl p-4 flex flex-col ring">
-          <span>UV Index</span>
+          <span className="font-bold">UV Index</span>
           <ResponsiveContainer width="100%" height={400}>
             <PieChart width={400} height={400}>
               <Pie
@@ -191,7 +191,7 @@ export default function Overview() {
           </ResponsiveContainer>
         </div>
         <div className="parking bg-grey rounded-xl p-4 flex flex-col gap-20 ring">
-          <span>Car Park Vacancy For Private Car</span>
+          <span className="font-bold">Car Park Vacancy For Private Car</span>
           <ResponsiveContainer width={"100%"} height={300}>
             <BarChart width={150} height={40} data={carData}>
               <Bar dataKey="uv" fill="#8884d8" />
@@ -199,7 +199,7 @@ export default function Overview() {
           </ResponsiveContainer>
         </div>
         <div className="wind bg-grey rounded-xl p-4 flex flex-col gap-20 ring">
-          <span>Wind Status</span>
+          <span className="font-bold">Wind Status</span>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart width={150} height={40} data={barData}>
               <Bar dataKey="uv" fill="#F72C25" />
